@@ -28,7 +28,7 @@ export const SwiperHero = (props) => {
                         <div className={styles.title}>
                             <div style={{borderTop: "2px solid #FFD600", width: "8%"}} />
                             <br/>
-                            <p style={{lineHeight: 1.3, fontWeight: "600"}} className="text-big">Измените Ваше Представление <br/> Об Электронных Сигаретах</p>
+                            <p style={{lineHeight: 1.2, fontWeight: "600"}} className="text-big">Измените Ваше Представление <br/> Об Электронных Сигаретах</p>
                             <div className="mt-5">
                             <span className="text-default text-bold mr-4">Подробнее ниже</span>
                                 <img src={arrow} alt="arrow-down"/>

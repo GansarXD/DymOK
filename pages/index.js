@@ -6,17 +6,20 @@ import {useState} from "react"
 import logo1 from "../images/hqd.jpg"
 import logo2 from "../images/puff.png"
 import logo3 from "../images/masking.jpg"
+import logo4 from "../images/juul.png"
 import {SwiperHero} from "../components/SwiperHero";
 import back1 from "../images/masking-hero.jpg"
 import back2 from "../images/hqd-hero.jpg"
 import back3 from "../images/puff-hero.jpg"
 import whatsapp from "../images/whatsapp.svg"
+import {AnchorNav} from "../components/AnchorNav";
 
 
 
 export default function Home() {
   const [products] = useState([
     {
+      name: "hqd",
       number: "01",
       price: "-------------- 10 900 ₸",
       title: "Линейка HQD",
@@ -26,6 +29,7 @@ export default function Home() {
       back: back1
     },
     {
+      name: "puff",
       number: "02",
       price: "-------------- 16 500 ₸",
       title: "Линейка PUFF BAR",
@@ -36,6 +40,7 @@ export default function Home() {
 
     },
     {
+      name: "masking",
       number: "03",
       price: "-------------- 5 500 ₸",
       title: "MASKING",
@@ -44,14 +49,16 @@ export default function Home() {
       isEven: false,
       back: back3
     },
-    // {
-    //   number: "04",
-    //   price: "10 900 ₸",
-    //   title: "Линейка HQD",
-    //   description: "Из-за отсутствия побочных продуктов горения, наша продукция наносит гораздо меньший вред вашему здоровью! Идеально подобранная крепость жидкости на правильном солевом никотине вкупе с правильной мощностью дает лучший потребительский опыт. Забудьте о зарядных устройствах, флаконе с жидкостью, сгоревшей вате, испарителях и кнопках.",
-    //   // image: {url: {logo1}},
-    //   isEven: true
-    // },
+    {
+      name: "juul",
+      number: "04",
+      price: "-------------- 8 500 ₸",
+      price2: "-------------- 6 300 ₸",
+      title: "Устройства и картриджи JUUL",
+      description: "",
+      image: logo4,
+      isEven: true
+    },
 
   ])
   return (
@@ -65,7 +72,9 @@ export default function Home() {
       <a href="https://wa.me/+77472562940">
         <img className={styles.whatstapp} src={whatsapp} alt=""/>
       </a>
+      <AnchorNav products={products}/>
       <Container
+          id="hero"
           className="p-0 mt-3"
           style={{overflow: "hidden"}}
           fluid={true}>

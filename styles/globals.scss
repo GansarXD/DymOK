@@ -21,16 +21,52 @@ a {
 }
 
 .text-default {
+  font-size: 6px;
+  @media only screen and (min-width: 576px) {
+    font-size: 8px;
+  }@media only screen and (min-width: 768px) {
+  font-size: 11px;
+}@media only screen and (min-width: 992px) {
+  font-size: 14px;
+}@media only screen and (min-width: 1200px) {
   font-size: 16px;
 }
+}
 .text-middle {
+  font-size: 7px;
+  @media only screen and (min-width: 576px) {
+    font-size: 9px;
+  }@media only screen and (min-width: 768px) {
+  font-size: 12px;
+}@media only screen and (min-width: 992px) {
+  font-size: 15px;
+}@media only screen and (min-width: 1200px) {
   font-size: 18px;
 }
+}
 .text-title {
+  font-size: 15px;
+  @media only screen and (min-width: 576px) {
+    font-size: 25px;
+  }@media only screen and (min-width: 768px) {
+  font-size: 35px;
+}@media only screen and (min-width: 992px) {
+  font-size: 45px;
+}@media only screen and (min-width: 1200px) {
   font-size: 53px;
 }
+}
 .text-big {
-  font-size: 70px;
+  font-size: 20px;
+  @media only screen and (min-width: 576px) {
+    font-size: 35px;
+  }@media only screen and (min-width: 768px) {
+    font-size: 45px;
+  }@media only screen and (min-width: 992px) {
+    font-size: 60px;
+  }@media only screen and (min-width: 1200px) {
+    font-size: 74px;
+  }
 }
 .text-bold {
   font-weight: 600;

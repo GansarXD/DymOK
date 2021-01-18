@@ -4,7 +4,7 @@ import styles from "./ProductSection.module.css"
 export const ProductSection = (props) => {
     if (!props.isEven) {
         return <>
-            <Row className={styles.product}>
+            <Row className={styles.product} id={props.name}>
                 <Col xs="6">
                     <div
                         // className={`${styles.product}`}
@@ -28,7 +28,7 @@ export const ProductSection = (props) => {
     }
     else {
         return <>
-            <Row className={styles.product}>
+            <Row className={styles.product} id={props.name}>
                 <Col xs={{size: "6"}}><img className={styles.image} src={props.image} alt=""/></Col>
                 <Col xs={{size: "6"}}>
                     <div
@@ -40,6 +40,7 @@ export const ProductSection = (props) => {
                         </div>
                         <div className={styles.product_in}>
                             <p className={`text-default ${styles.price}`}>{props.price}</p>
+                            <p className={`text-default ${styles.price}`}>{props.price2}</p>
                             <p className="text-title text-bold">{props.title}</p>
                             <p style={{lineHeight: "1.6"}} className="text-default text-bold">{props.description}</p>
                         </div>

@@ -1,0 +1,29 @@
+.side_anchor {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 95%;
+  top: 50%;
+  z-index: 10;
+}
+.each_anchor {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  border-right: 3px solid rgba(244,244,244,0.5);
+  color: rgba(244,244,244,0.5) !important;
+  &:hover {
+    border-right: 3px solid rgba(244,244,244, 0.8);
+    color: rgba(244,244,244, 0.8);
+    cursor: pointer;
+  }
+}
+.text_anchor {
+  color: inherit;
+  &:hover {
+    color: rgba(244,244,244, 0.8);
+  }
+}
+.active_anchor {
+  color: white;
+  border-right: 3px solid white;
+}
