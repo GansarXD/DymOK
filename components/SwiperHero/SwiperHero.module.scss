@@ -3,11 +3,14 @@
   background-position: center;
   height: 80vw;
   position: relative;
+  @media only screen and (max-width: 426px){
+    height: 120vw;
+  }
 }
 .footer_phone {
   color: black !important;
   margin: auto;
-  width: max-content;
+  width: max-content !important;
   border-radius: 25px;
   background-color: #FFD600;
   padding: 7px 40px;
@@ -18,5 +21,10 @@
   transform: translate(-50%, -50%);
   top: 33%;
   left: 50%;
+  @media only screen and (max-width: 426px){
+    top: 30%;
+    left: 20%;
+    transform: translate(0,0);
+  }
   //border: 1px solid white;
 }

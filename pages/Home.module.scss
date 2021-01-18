@@ -140,4 +140,12 @@
   left: 5%;
   z-index: 10;
 }
+.products_container {
+  position: relative;
+  z-index: 2;
+  margin-top: -200px;
+  @media only screen and (max-width: 426px) {
+    margin-top: 0 !important;
+  }
+}
 

@@ -1,8 +1,21 @@
 .product {
     margin-bottom: 200px;
+    @media only screen and (max-width: 426px) {
+        margin-bottom: 50px;
+    }
 }
 .image {
     width: 75%;
+    @media only screen and (max-width: 426px) {
+        width: 100%;
+        float: none !important;
+    }
+}
+.image_wrapper {
+    width: 75%;
+    //@media only screen and (max-width: 426px) {
+    //    margin: auto;
+    //}
 }
 .product_in {
     padding-left: 2rem;
