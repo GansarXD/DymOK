@@ -132,3 +132,11 @@
 .footer_brand {
   color: rgba(244, 244, 244, 0.35);
 }
+.whatstapp {
+  width: 4%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 5%;
+  z-index: 10;
+}

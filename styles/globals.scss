@@ -1,18 +1,14 @@
 @import "~bootstrap";
-
+//@import "~swiper";
+@import "fonts/stylesheet.css";
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Avenir Next Cyr", sans-serif !important;
   background-color: #071832;
 }
 
-/*@font-face {*/
-/*  font-family: "Avenir Next Cyr";*/
-/*  src: local("avenir"), url(./styles/fonts/AvenirNextCyr-Bold.ttf);*/
-/*}*/
 
 a {
   color: inherit;
@@ -20,22 +16,21 @@ a {
 }
 
 * {
-  /*font-family: "Avenir Next Cyr", sans-serif;*/
   box-sizing: border-box;
   color: white;
 }
 
 .text-default {
-  font-size: 15px;
+  font-size: 16px;
 }
 .text-middle {
   font-size: 18px;
 }
 .text-title {
-  font-size: 50px;
+  font-size: 53px;
 }
 .text-big {
-  font-size: 88px;
+  font-size: 70px;
 }
 .text-bold {
   font-weight: 600;

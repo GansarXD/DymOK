@@ -1,0 +1,22 @@
+.back {
+  background-size: cover;
+  background-position: center;
+  height: 80vw;
+  position: relative;
+}
+.footer_phone {
+  color: black !important;
+  margin: auto;
+  width: max-content;
+  border-radius: 25px;
+  background-color: #FFD600;
+  padding: 7px 40px;
+  font-weight: 600;
+}
+.title {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 33%;
+  left: 50%;
+  //border: 1px solid white;
+}

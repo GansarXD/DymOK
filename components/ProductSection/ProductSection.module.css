@@ -9,10 +9,11 @@
     margin-top: -3rem;
 }
 .number {
+    font-family: sans-serif !important;
     line-height: .7;
     margin-left: -2rem;
-    font-size: 10vw;
-    font-weight: bold;
+    font-size: 11vw;
+    font-weight: 800;
     padding: 0 !important;
     color: rgba(244, 244, 244, 0.15);
 }
