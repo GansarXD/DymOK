@@ -21,8 +21,15 @@ export const SwiperHero = (props) => {
                 }}
               >
                 <h1
-                  className="text-title text-center mt-3"
+                  className="text-title text-center mt-3 d-none d-sm-block"
                   style={{ fontWeight: "700" }}
+                >
+                  <span>Дым</span>
+                  <span style={{ color: "#FFD600" }}>ОК</span>
+                </h1>
+                <h1
+                  className="text-center mt-3 d-md-none mb-3"
+                  style={{ fontWeight: "700", fontSize: "45px" }}
                 >
                   <span>Дым</span>
                   <span style={{ color: "#FFD600" }}>ОК</span>
@@ -32,14 +39,37 @@ export const SwiperHero = (props) => {
                     <a href="tel:+77472562940">+7 747 256 2940</a>
                   </p>
                 </div>
-                <div className={styles.title}>
+                {/*----- mobile*/}
+                <div className={`d-md-none ${styles.mobile_hero}`}>
+                  <div className="m-auto" style={{ width: "max-content" }}>
+                    <p
+                      style={{
+                        fontSize: "27px",
+                        lineHeight: "1.1",
+                        fontWeight: "500",
+                      }}
+                    >
+                      Измените Ваше <br /> Представление <br /> Об Электронных{" "}
+                      <br />
+                      Сигаретах
+                    </p>
+                    <div className="mt-5">
+                      <span className="text-default text-bold mr-4">
+                        Подробнее ниже
+                      </span>
+                      <img src={arrow} alt="arrow-down" />
+                    </div>
+                  </div>
+                </div>
+                {/*-----*/}
+                <div className={`d-none d-sm-block ${styles.title}`}>
                   <div
                     style={{ borderTop: "2px solid #FFD600", width: "8%" }}
                   />
                   <br />
                   <p
                     style={{ lineHeight: 1.2, fontWeight: "600" }}
-                    className="text-big"
+                    className="text-big d-none d-sm-block"
                   >
                     Измените Ваше Представление <br /> Об Электронных Сигаретах
                   </p>

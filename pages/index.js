@@ -12,6 +12,7 @@ import back1 from "../images/masking-hero.jpg";
 import back2 from "../images/hqd-hero.jpg";
 import back3 from "../images/puff-hero.jpg";
 import whatsapp from "../images/whatsapp.svg";
+import mobile from "../images/whatsap-mobile.svg";
 import { AnchorNav } from "../components/AnchorNav";
 
 export default function Home() {
@@ -90,7 +91,21 @@ export default function Home() {
         </div>
         <Row>
           <Col xs="12" className="text-center">
-            <p className="text-title" style={{ fontWeight: "700" }}>
+            <p
+              className="text-title d-none d-sm-block"
+              style={{ fontWeight: "700" }}
+            >
+              <span>Дым</span>
+              <span style={{ color: "#FFD600" }}>ОК</span>
+            </p>
+            <p
+              className="text-center mt-3 d-md-none"
+              style={{
+                fontWeight: "700",
+                fontSize: "45px",
+                marginBottom: "-20px",
+              }}
+            >
               <span>Дым</span>
               <span style={{ color: "#FFD600" }}>ОК</span>
             </p>
@@ -98,7 +113,14 @@ export default function Home() {
               <p className={`mt-5 text-default ${styles.footer_phone}`}>
                 <a href="tel:+77472562940">+7 747 256 2940</a>
               </p>
-
+              <a className="d-md-none" href="https://wa.me/+77472562940">
+                <img
+                  style={{ width: "130px" }}
+                  className="pt-3"
+                  src={mobile}
+                  alt=""
+                />
+              </a>
               <p
                 className={`mt-5 mb-5 text-default text-bold ${styles.footer_brand}`}
               >
