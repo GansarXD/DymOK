@@ -2,12 +2,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Col } from "reactstrap";
 import SwiperCore, { EffectFade, Autoplay } from "swiper";
 import styles from "./SwiperHero.module.scss";
-import { useState } from "react";
+// import { useState } from "react";
 import arrow from "../../images/arrow-down.svg";
+import logo from "../../images/main-logo.png";
+// import AnchorLinkHero from "react-anchor-link-smooth-scroll";
 
 SwiperCore.use([EffectFade, Autoplay]);
 export const SwiperHero = (props) => {
-  const [active_index, setActiveIndex] = useState(0);
+  // const [active_index, setActiveIndex] = useState(0);
   return (
     <>
       <Col xs="12">
@@ -20,20 +22,42 @@ export const SwiperHero = (props) => {
                   backgroundImage: `linear-gradient(#071832, rgba(0,0,0,0.3), #071832), url(${product.back})`,
                 }}
               >
-                <h1
-                  className="text-title text-center mt-3 d-none d-sm-block"
-                  style={{ fontWeight: "700" }}
+                {/*  Desktop*/}
+                <div
+                  className="m-auto d-none d-sm-block d-md-none d-lg-block"
+                  style={{ width: "max-content" }}
                 >
-                  <span>Дым</span>
-                  <span style={{ color: "#FFD600" }}>ОК</span>
-                </h1>
-                <h1
-                  className="text-center mt-3 d-md-none mb-3"
-                  style={{ fontWeight: "700", fontSize: "45px" }}
+                  <img style={{ width: "250px" }} src={logo} alt="" />
+                </div>
+                {/*  Tablet*/}
+                <div
+                  className="m-auto d-none d-md-block d-lg-none"
+                  style={{ width: "max-content" }}
                 >
-                  <span>Дым</span>
-                  <span style={{ color: "#FFD600" }}>ОК</span>
-                </h1>
+                  <img style={{ width: "190px" }} src={logo} alt="" />
+                </div>
+                {/*  Mobile*/}
+                <div
+                  className="m-auto d-md-none"
+                  style={{ width: "max-content" }}
+                >
+                  <img style={{ width: "150px" }} src={logo} alt="" />
+                </div>
+
+                {/*<h1*/}
+                {/*  className="text-title text-center mt-3 d-none d-sm-block"*/}
+                {/*  style={{ fontWeight: "700" }}*/}
+                {/*>*/}
+                {/*  <span>Дым</span>*/}
+                {/*  <span style={{ color: "#FFD600" }}>ОК</span>*/}
+                {/*</h1>*/}
+                {/*<h1*/}
+                {/*  className="text-center mt-3 d-md-none mb-3"*/}
+                {/*  style={{ fontWeight: "700", fontSize: "45px" }}*/}
+                {/*>*/}
+                {/*  <span>Дым</span>*/}
+                {/*  <span style={{ color: "#FFD600" }}>ОК</span>*/}
+                {/*</h1>*/}
                 <div style={{ width: "100%" }}>
                   <p className={`mt-2 text-default ${styles.footer_phone}`}>
                     <a href="tel:+77472562940">+7 747 256 2940</a>
@@ -53,11 +77,14 @@ export const SwiperHero = (props) => {
                       <br />
                       Сигаретах
                     </p>
+
                     <div className="mt-5">
+                      {/*<AnchorLinkHero href="#hqd">*/}
                       <span className="text-default text-bold mr-4">
                         Подробнее ниже
                       </span>
                       <img src={arrow} alt="arrow-down" />
+                      {/*</AnchorLinkHero>*/}
                     </div>
                   </div>
                 </div>
