@@ -45,7 +45,12 @@ export const ProductSection = (props) => {
                 {/*<hr className={styles.line}/>*/}
               </div>
               <div className={styles.product_in}>
-                <p className={` ${styles.price}`}>{props.price}</p>
+                <p
+                  style={{ marginLeft: "5.5rem" }}
+                  className={` ${styles.price}`}
+                >
+                  {props.price.replace("--------------", "")}
+                </p>
                 <p style={{ fontSize: "35px" }} className="text-bold">
                   {props.title}
                 </p>
@@ -114,8 +119,19 @@ export const ProductSection = (props) => {
                 {/*<hr className={styles.line}/>*/}
               </div>
               <div className={styles.product_in}>
-                <p className={` ${styles.price}`}>{props.price}</p>
-                <p className={` ${styles.price}`}>{props.price2}</p>
+                <p
+                  style={{ marginLeft: "5.5rem", marginBottom: "0" }}
+                  className={` ${styles.price}`}
+                >
+                  {props.price.replace("--------------", "")}
+                </p>
+                <p
+                  style={{ marginLeft: "5.5rem" }}
+                  className={` ${styles.price}`}
+                >
+                  {props.price2.replace("--------------", "")}
+                </p>
+
                 <p style={{ fontSize: "35px" }} className="text-bold">
                   {props.title}
                 </p>
