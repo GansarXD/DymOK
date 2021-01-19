@@ -11,8 +11,8 @@ export const AnchorNav = (props) => {
     <>
       <div className={`d-none d-sm-block ${styles.side_anchor}`}>
         {props.products.map((anchor, idx) => (
-          <AnchorLink offset="200" href={`#` + `${anchor.name}`}>
-            <div key={idx} className={styles.each_anchor}>
+          <AnchorLink key={idx} offset="200" href={`#` + `${anchor.name}`}>
+            <div className={styles.each_anchor}>
               <p
                 className={`text-bold text-default m-0 text-center ${styles.text_anchor}`}
               >
