@@ -93,6 +93,7 @@ export default function Home() {
                Устройства и картриджи JUUL, Измените Ваше Представление Об Электронных Сигаретах"
         />
         <meta property="og:image" content={logo2} />
+        <meta property="og:type" content="website" />
       </Head>
       <a className="d-none d-sm-block" href="https://wa.me/+77472562940">
         <img className={styles.whatstapp} src={mobile} alt="whatsapp" />
