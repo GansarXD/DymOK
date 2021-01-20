@@ -47,7 +47,7 @@ export default function Home() {
       number: "03",
       price: "-------------- от 2 500 до 4 000 ₸",
       price2: "",
-      title: "MASKING",
+      title: "MASKKING",
       description:
         "Это устройство без хлопот и забот о заправке и подзарядке. Обладая активируемым вытяжкой пусковым механизмом, одноразовое устройство представляет собой одноразовый вейп с предварительно заполненной солью никеля. С концентрацией никельной и небольшим незаметным профилем, который умещается в ладони. Это идеальное устройство для тех, кто всегда в пути и не любит носить с собой много вещей для своих устройств для вейпинга. ТОЛЬКО ОРИГИНАЛ.",
       image: logo3,
@@ -68,10 +68,31 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>DymOK</title>
-        <meta name="keywords" content="вейп" />
-        <meta name="description" content="" />
+        <title>ДымОк</title>
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="keywords"
+          content="Вейпшоп, дымок, dymok, vape, электронные сигареты, купить вейп, купить электронные сигареты,
+           одноразовые электронные сигареты, купить одноразовые электронные сигареты, vapeshop, купить вейп Алматы,
+            вейп Алматы, купить электронные сигареты Алматы, купить одноразовые электронные сигареты Алматы,
+             купить maskking, купить maskking Алматы, HQD, Устройства и картриджи JUUL, PUFF BAR, MASKKING, HQD,
+              купить Устройства и картриджи JUUL, купить PUFF BAR, купить MASKKING, купить Устройства и картриджи JUUL Алматы,
+               купить PUFF BAR Алматы, купить MASKKING Алматы, "
+        />
+        <meta
+          name="description"
+          content="ДымОк - магазин электронных сигарет, в наличии линейки HQD, PUFF BAR, MASKKING,
+           Устройства и картриджи JUUL, Измените Ваше Представление Об Электронных Сигаретах"
+        />
         <meta charSet="utf-8" />
+        <meta property="og:title" content="ДымОк" />
+        <meta
+          property="og:description"
+          content="ДымОк - магазин электронных сигарет, в наличии линейки HQD, PUFF BAR, MASKKING,
+               Устройства и картриджи JUUL, Измените Ваше Представление Об Электронных Сигаретах"
+        />
+        <meta property="og:image" content={logo2} />
       </Head>
       <a className="d-none d-sm-block" href="https://wa.me/+77472562940">
         <img className={styles.whatstapp} src={mobile} alt="whatsapp" />
