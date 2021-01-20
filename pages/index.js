@@ -78,7 +78,7 @@ export default function Home() {
       </a>
       <a
         className="d-none d-sm-block"
-        href="https://www.instagram.com/p/CKG-g3EBGZ7/?igshid=xznxiu2qqg1h"
+        href="https://www.instagram.com/dymok.kz21/"
       >
         <img src={instagram} className={styles.instagram} alt="instagram" />
       </a>
@@ -133,7 +133,7 @@ export default function Home() {
               </a>
               <a
                 className="d-md-none"
-                href="https://www.instagram.com/p/CKG-g3EBGZ7/?igshid=xznxiu2qqg1h"
+                href="https://www.instagram.com/dymok.kz21/"
               >
                 <img
                   style={{ width: "40px" }}
