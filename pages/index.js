@@ -11,9 +11,10 @@ import { SwiperHero } from "../components/SwiperHero";
 import back1 from "../images/masking-hero.jpg";
 import back2 from "../images/hqd-hero.jpg";
 import back3 from "../images/puff-hero.jpg";
-import whatsapp from "../images/whatsapp.svg";
-import mobile from "../images/whatsap-mobile.svg";
+// import whatsapp from "../images/whatsapp.svg";
+import mobile from "../images/whatsapp-mini.svg";
 import { AnchorNav } from "../components/AnchorNav";
+import instagram from "../images/instagram.svg";
 
 export default function Home() {
   const [products] = useState([
@@ -73,7 +74,13 @@ export default function Home() {
         <meta charSet="utf-8" />
       </Head>
       <a className="d-none d-sm-block" href="https://wa.me/+77472562940">
-        <img className={styles.whatstapp} src={whatsapp} alt="" />
+        <img className={styles.whatstapp} src={mobile} alt="whatsapp" />
+      </a>
+      <a
+        className="d-none d-sm-block"
+        href="https://www.instagram.com/p/CKG-g3EBGZ7/?igshid=xznxiu2qqg1h"
+      >
+        <img src={instagram} className={styles.instagram} alt="instagram" />
       </a>
       <AnchorNav className="d-none d-sm-block" products={products} />
       <Container
@@ -118,10 +125,21 @@ export default function Home() {
               </p>
               <a className="d-md-none" href="https://wa.me/+77472562940">
                 <img
-                  style={{ width: "130px" }}
-                  className="pt-3"
+                  style={{ width: "40px" }}
+                  className="pt-3 mr-3"
                   src={mobile}
                   alt=""
+                />
+              </a>
+              <a
+                className="d-md-none"
+                href="https://www.instagram.com/p/CKG-g3EBGZ7/?igshid=xznxiu2qqg1h"
+              >
+                <img
+                  style={{ width: "40px" }}
+                  className="pt-3"
+                  src={instagram}
+                  alt="instagram"
                 />
               </a>
               <p

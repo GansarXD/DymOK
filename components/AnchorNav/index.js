@@ -1,6 +1,6 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import styles from "./AnchorNav.module.scss";
-import { useState } from "react";
+// import { useState } from "react";
 
 export const AnchorNav = (props) => {
   props.products.unshift({
