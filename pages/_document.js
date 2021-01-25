@@ -40,6 +40,7 @@ class MyDocument extends Document {
           />
           <meta property="og:image" content={logo2} />
           <meta property="og:type" content="website" />
+          <link rel="shortcut icon" href="/static/favicon.ico" />
         </Head>
         <body>
           <Main />
